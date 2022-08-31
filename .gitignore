@@ -1,0 +1,9 @@
+# IDE
+.project
+.settings
+.configuration
+.config
+target
+bin
+.idea
+
