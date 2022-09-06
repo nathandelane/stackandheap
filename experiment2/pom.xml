@@ -2,14 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.nathandelane.stackandheap.experiment1</groupId>
-  <artifactId>experiment1</artifactId>
+  <groupId>com.github.nathandelane.stackandheap.experiment2</groupId>
+  <artifactId>experiment2</artifactId>
 
   <version>1.0-SNAPSHOT</version>
 
   <packaging>jar</packaging>
 
-  <name>Experiment 1</name>
+  <name>Experiment 2</name>
   <description>Experimenting with Java heap and stack.</description>
 
   <properties>
@@ -61,7 +61,7 @@
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>com.github.nathandelane.stackandheap.experiment1.Application</mainClass>
+                <mainClass>com.github.nathandelane.stackandheap.experiment2.Application</mainClass>
               </manifest>
             </archive>
           </configuration>

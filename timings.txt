@@ -1,0 +1,110 @@
+Experiment1 Application
+Max: 1,000
+Timing:
+ - real: 153.35
+ - user: 0.16
+ - sys: 0.13
+
+time -l output:
+---------------
+153.35 real         0.16 user         0.13 sys
+23142400  maximum resident set size
+        0  average shared memory size
+        0  average unshared data size
+        0  average unshared stack size
+    7656  page reclaims
+        0  page faults
+        0  swaps
+        0  block input operations
+        0  block output operations
+        0  messages sent
+        0  messages received
+        1  signals received
+        21  voluntary context switches
+    5236  involuntary context switches
+504039869  instructions retired
+733870837  cycles elapsed
+13082624  peak memory footprint
+
+Experiment2 Application
+Max: 1,000
+Timing:
+ - real: 153.75
+ - user: 1.92
+ - sys: 0.30
+
+time -l output:
+---------------
+153.75 real         1.92 user         0.30 sys
+68632576  maximum resident set size
+        0  average shared memory size
+        0  average unshared data size
+        0  average unshared stack size
+    25187  page reclaims
+        2  page faults
+        0  swaps
+        0  block input operations
+        0  block output operations
+    1447  messages sent
+    1447  messages received
+        2  signals received
+    1455  voluntary context switches
+    14556  involuntary context switches
+6425073760  instructions retired
+6643454294  cycles elapsed
+60194816  peak memory footprint
+
+Experiment3 Application
+Max: 1,000
+Timing:
+ - real: 0.11
+ - user: 0.08
+ - sys: 0.03
+
+time -l output:
+---------------
+0.11 real         0.08 user         0.03 sys
+25628672  maximum resident set size
+        0  average shared memory size
+        0  average unshared data size
+        0  average unshared stack size
+    7323  page reclaims
+        0  page faults
+        0  swaps
+        0  block input operations
+        0  block output operations
+        0  messages sent
+        0  messages received
+        1  signals received
+        6  voluntary context switches
+        386  involuntary context switches
+443288851  instructions retired
+394881576  cycles elapsed
+15224832  peak memory footprint
+
+Experiment4 Application
+Max: 1,000
+Timing:
+ - real: 0.11
+ - user: 0.08
+ - sys: 0.04
+
+time -l output:
+---------------
+24461312  maximum resident set size
+        0  average shared memory size
+        0  average unshared data size
+        0  average unshared stack size
+    7149  page reclaims
+        7  page faults
+        0  swaps
+        0  block input operations
+        0  block output operations
+        0  messages sent
+        0  messages received
+        1  signals received
+        9  voluntary context switches
+        482  involuntary context switches
+451417094  instructions retired
+408291156  cycles elapsed
+14069760  peak memory footprint

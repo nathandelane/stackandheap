@@ -1,4 +1,4 @@
-package com.github.nathandelane.stackandheap.experiment1;
+package com.github.nathandelane.stackandheap.experiment2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,24 +6,25 @@ import java.util.concurrent.TimeUnit;
 
 public class Application {
 
-  private List<Integer> multipleOfThreeOrFive;
+  private final List<Integer> multiplesOfThreeAndFive;
 
   private Application(final int maximumNum) {
-    multipleOfThreeOrFive = new ArrayList<>(maximumNum / 2);
+    multiplesOfThreeAndFive = new ArrayList(maximumNum / 2);
   }
 
-  public boolean isMultipleOfThree(final int num) {
+  public boolean isMultipleOfThree(final Integer num) {
     return num % 3 == 0;
   }
 
-  public boolean isMultipleOfFive(final int num) {
+  public boolean isMultipleOfFive(final Integer num) {
     return num % 5 == 0;
   }
 
-  public void findAllMultiplesOfThreeAndFive(final int maximumNum) {
-    for (int num  = 1; num <= maximumNum; num++) {
-      if (isMultipleOfThree(num) || isMultipleOfFive(num))
-        multipleOfThreeOrFive.add(num);
+  public void findAllMultiplesOfThreeAndFive(final Integer maximumNum) {
+    for (Integer num  = 1; num <= maximumNum; num++) {
+      if (isMultipleOfThree(num) || isMultipleOfFive(num)) {
+        multiplesOfThreeAndFive.add(num);
+      }
 
       try {
         TimeUnit.MILLISECONDS.sleep(150);
@@ -31,14 +32,15 @@ public class Application {
         throw new RuntimeException(e);
       }
     }
+
+    System.out.format("Multiples of 3 and 5 from 1 to %d: %n%s", maximumNum, multiplesOfThreeAndFive);
+    System.out.println();
   }
 
   public static void main(final String args[]) throws Exception {
     final int maximumNum = Integer.parseInt(args[0]);
     final Application application = new Application(maximumNum);
     application.findAllMultiplesOfThreeAndFive(maximumNum);
-
-    System.out.format("All numbers between 1 and %d that are multiples of 3 or 5:%n%s%n", maximumNum, application.multipleOfThreeOrFive);
 
 //    System.out.println("Press any key to continue...");
 //    System.in.read();
