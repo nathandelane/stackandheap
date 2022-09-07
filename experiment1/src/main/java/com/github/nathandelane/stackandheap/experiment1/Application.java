@@ -2,7 +2,6 @@ package com.github.nathandelane.stackandheap.experiment1;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class Application {
 
@@ -24,12 +23,6 @@ public class Application {
     for (int num  = 1; num <= maximumNum; num++) {
       if (isMultipleOfThree(num) || isMultipleOfFive(num))
         multipleOfThreeOrFive.add(num);
-
-      try {
-        TimeUnit.MILLISECONDS.sleep(150);
-      } catch (final InterruptedException e) {
-        throw new RuntimeException(e);
-      }
     }
   }
 

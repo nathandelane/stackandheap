@@ -25,12 +25,6 @@ public class Application {
       if (isMultipleOfThree(num) || isMultipleOfFive(num)) {
         multiplesOfThreeAndFive.add(num);
       }
-
-      try {
-        TimeUnit.MILLISECONDS.sleep(150);
-      } catch (final InterruptedException e) {
-        throw new RuntimeException(e);
-      }
     }
 
     System.out.format("Multiples of 3 and 5 from 1 to %d: %n%s", maximumNum, multiplesOfThreeAndFive);
